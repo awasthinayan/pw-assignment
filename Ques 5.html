@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            border: 2px solid brown;
+            width: 400px;
+            padding: 20px;
+            height: 230px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin-inline:5px;
+            margin-left:20px;
+            font-size:15pt;
+        }
+    </style>
+    </body>
+</head>
+<body>
+    <form>
+        <label for="First Name">First Name:
+        <input type="text" name="First Name" placeholder="Nayan" id="First Name" 
+        required minlength="3" max="20">
+        </label>
+<br>
+        <label for="Last Name">Last Name:
+            <input type="text" name="Last Name" placeholder="Awasthi" id="Last Name" 
+            required minlength="3" max="20" >
+        </label>
+
+        <br>
+        <label for="mail">Email:
+            <input type="text" name="Email" placeholder="nayanawasthi2015@gmail.com" id="mail" 
+            required minlength="3" max="20" >
+        </label>
+        <br>
+
+        <label for="Pass">Password:
+            <input type="text" name="Password" placeholder="******" id="pass" 
+            required minlength="3" max="20" >
+        </label>
+<br>
+        <label for="Confirm">Confirm Password:
+            <input type="text" name=" Confirm Password" placeholder="******" id="confirm" 
+            required minlength="3" max="20" >
+        </label>
+<br>
+<label for="age">Age:
+    <input type="text" name="Age" placeholder="22" id="age" 
+    required minlength="3" max="20" >
+</label>
+<br>
+<label for="gender">Gender:
+    <input type="radio" id="Male" value="Male" name="gender">
+    <label for="male">Male</label>
+    <input type="radio" id="Female" value="female" name="gender">
+    <label for="Female">Female</label>
+    <input type="radio" id="others" value="others" name="gender">
+    <label for="others">Others</label>
+</label>
+<br>
+<label for="terms">Terms:
+  <input type="checkbox" id="terms"> I agreed to terms and conditions
+</label>
+<br>
+<button type="submit">Register
+</button>
+    </form>
+</body>
+</html>
