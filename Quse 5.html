@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features of HTML5</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #f4f4f4;
+            padding: 0.5rem;
+            text-align: center;
+        }
+
+        nav a {
+            padding: 2px 5px;
+            margin:10px 10px;
+            text-decoration:solid;
+            color: #472242;
+        }
+
+        main {
+            padding: 1rem;
+        }
+
+        section {
+            margin-bottom: 2rem;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        h1, h2 {
+            color: #502663;
+        }
+
+        figure {
+            text-align: center;
+        }
+
+        figcaption {
+            font-size: 1.2rem;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Discover the Features of HTML5</h1>
+    </header>
+
+    <nav>
+        <a href="#feature1">Multimedia Support</a>
+        <a href="#feature2">Semantic Elements</a>
+        <a href="#feature3">Offline Capabilities</a>
+    </nav>
+
+    <main>
+        <section id="feature1">
+            <h2>1. Multimedia Support</h2>
+            <p>HTML5 provides built-in support for audio and video elements, eliminating the need for external plugins like Flash. This makes embedding multimedia content seamless and efficient.</p>
+            <figure>
+                <video controls width="400">
+                    <source src="sample-video.mp4" type="video/mp4">
+                </video>
+                <figcaption>Example of the HTML5 <code>&lt;video&gt;</code> element.</figcaption>
+            </figure>
+        </section>
+
+        <section id="feature2">
+            <h2>2. Semantic Elements</h2>
+            <p>HTML5 introduces semantic tags like <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>, <code>&lt;article&gt;</code>, and <code>&lt;section&gt;</code>. These tags enhance the readability of the code and improve accessibility and SEO.</p>
+            <figure>
+                <img src="semantic-structure.png" alt="Semantic Structure Example" width="100">
+                <figcaption>An example of a webpage structured with semantic tags.</figcaption>
+            </figure>
+        </section>
+
+        <section id="feature3">
+            <h2>3. Offline Capabilities</h2>
+            <p>HTML5 introduces the Application Cache, allowing web applications to function offline by storing resources locally. This ensures a better user experience even without an internet connection.</p>
+            <p>For example, a manifest file can specify the resources to cache:</p>
+            <pre>
+CACHE MANIFEST
+# Version 1.0
+index.html
+styles.css
+script.js
+            </pr>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 HTML5 Features Showcase. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>

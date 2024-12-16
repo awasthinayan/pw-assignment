@@ -3,15 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Web Accessibility</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        h1, h2 {
+            text-align: center;
+            color: #004aad;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-top: 20px;
+        }
+        h2 {
+            font-size: 1.8rem;
+            margin-top: 20px;
+        }
+        p, ul, li {
+            margin: 10px 20px;
+        }
+
+        
+        section {
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 800px;
+            background: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        section:nth-child(even) {
+            background: #f1f8ff;
+        }
+
+        
+        ul {
+            padding-left: 20px;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        ul li ul {
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        ul li ul li {
+            list-style-type: circle;
+        }
+
+       
+        strong {
+            color: #0056b3;
+        }
+        em {
+            font-style: italic;
+            color: #333;
+        }
+
+        
+        section:last-of-type p {
+            text-align: center;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #004aad;
+        }
+    </style>
 </head>
 <body>
+    <h1>Accessibility in Web Development</h1>
+    <section>
+        <h2>Definition of Accessibility</h2>
+        <p>
+            Accessibility in web development refers to designing and developing websites, tools, and technologies 
+            so that they can be used by all people, regardless of their physical, sensory, cognitive, or technological limitations. 
+            This includes users with disabilities such as visual impairments, hearing loss, motor difficulties, and cognitive challenges.
+        </p>
+    </section>
 
-    <video autoplay loop muted width="340" height="300">  
-        <source src="5377684-uhd_2560_1440_25fps.mp4" type="video/mp4">  
-    </video>
-    <audio controls autoplay style="display: flex;">
-        <source src="t-rex-roar.mp3" type="audio/mp3">
-    </audio>
+    <section>
+        <h2>Why Accessibility is Essential</h2>
+        <ul>
+            <li>
+                <strong>Inclusivity:</strong> Ensures that everyone, including people with disabilities, 
+                can access and interact with web content without barriers.
+            </li>
+            <li>
+                <strong>Legal Compliance:</strong> Many countries have laws mandating web accessibility, 
+                such as the <em>ADA (Americans with Disabilities Act)</em> in the U.S. or the 
+                <em>Web Content Accessibility Guidelines (WCAG)</em> globally. Non-compliance can lead to legal action.
+            </li>
+            <li>
+                <strong>Broader Reach:</strong> Makes websites usable for a larger audience, including those with temporary impairments 
+                (e.g., injuries) or situational challenges (e.g., using a phone in bright sunlight).
+            </li>
+            <li>
+                <strong>Improved User Experience:</strong> Accessibility features like clear navigation, captions, 
+                and keyboard shortcuts enhance usability for everyone, not just users with disabilities.
+            </li>
+            <li>
+                <strong>Search Engine Optimization (SEO):</strong> Accessible practices such as adding descriptive alt text for images 
+                and using semantic HTML improve a site's SEO, helping it rank higher in search engines.
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Benefits to Different User Groups</h2>
+        <ul>
+            <li>
+                <strong>People with Disabilities:</strong>
+                <ul>
+                    <li><em>Visual impairments:</em> Screen readers, alternative text for images, and scalable fonts ensure content is perceivable.</li>
+                    <li><em>Hearing impairments:</em> Subtitles, transcripts, and sign language interpretations for multimedia make auditory content accessible.</li>
+                    <li><em>Motor disabilities:</em> Keyboard navigation and voice control support allow users to interact without relying on a mouse.</li>
+                    <li><em>Cognitive disabilities:</em> Simple layouts, clear language, and consistent design reduce cognitive load.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Older Adults:</strong> Accessibility features like larger fonts, higher contrast, and simplified navigation cater to age-related challenges such as reduced vision or motor skills.
+            </li>
+            <li>
+                <strong>People with Temporary Limitations:</strong> Those recovering from injuries (e.g., broken arm) or experiencing environmental challenges 
+                (e.g., loud noise or poor lighting) benefit from accessible designs.
+            </li>
+            <li>
+                <strong>Users with Low Bandwidth or Older Devices:</strong> Optimized content that loads efficiently and works on basic hardware ensures accessibility for users with limited internet connectivity.
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Conclusion</h2>
+        <p>
+            Creating accessible websites is a moral, legal, and practical imperative. It ensures inclusivity, 
+            improves the overall user experience, and broadens the reach of web content. 
+            By making the web accessible, developers empower all users, regardless of their abilities, 
+            to engage with and benefit from online information and services.
+        </p>
+    </section>
 </body>
 </html>

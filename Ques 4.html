@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessibility of HTML</title>
+    <style>
+        body {
+            background-color: #ffffff; 
+            color: #000000;           
+        }
+        a {
+            color: #004aad;           
+        }
+        a:hover {
+            color: #ff4500;           
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: 2px solid #004aad;
+            background-color: #f1f1f1;
+            color: #004aad;
+            cursor: pointer;
+        }
+        button:focus {
+            outline: none; 
+            border-color: #ff4500; 
+            box-shadow: 0 0 5px #ff4500; 
+        }
+
+        .decorative {
+            font-size: 50px;
+            color: lightgray;
+        }
+        button{
+            width:max-content;
+            border: 2px solid rgb(6, 173, 165);
+            margin: 5px;
+            padding:10px 20px;
+        }
+    </style>
+</head>
+<body>
+    <center><h1 style="color: #ff4500; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">High Contrast Accessibility Example</h1></center>
+    <div style="text-align: center; color: cadetblue; text-decoration:chartreuse; font-size: 15pt; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+    <p>Ensure that text and background have sufficient contrast.</p>
+    <a href="#" style="color: rgb(19, 128, 128);">Learn more about accessibility</a></div>
+
+    <center><h1 style="color: rgb(184, 120, 25);  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Focus Indicators Accessibility Example</h1></center>
+    <button style="margin-inline-start:550px;">Click Me</button>
+    <button>Submit</button>
+    
+    <center><h1  style="color: rgb(73, 194, 154);  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Screen Reader Accessibility Example</h1></center>
+    <p style="text-align: center; color: rgb(82, 151, 72);">
+        Welcome to our website! 
+        <span class="decorative" aria-hidden="true">★</span> 
+        We prioritize accessibility for all.
+    </p>
+</body>
+</html>
