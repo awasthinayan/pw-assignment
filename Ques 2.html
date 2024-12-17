@@ -3,64 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Entities Example</title>
-    <style>
-        body{
-            text-align: center;
-            margin-inline: 340px;
-            background-color: rgb(243, 224, 198);       
-         }
-         table{
-            color: rgb(60, 146, 33);
-            border-color: rgb(214, 197, 230);
-            font-size: 12pt;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-         }
-    </style>
+    <meta name="description" content="Learn how to create SEO-optimized HTML documents with CSS styling. Improve your website's visibility and user experience.">
+    <meta name="keywords" content="SEO, HTML, CSS, SEO optimization, meta tags, web design">
+    <meta name="author" content="Nayan Awasthi">
+    <meta name="robots" content="index, follow">
+    <title>SEO-Optimized HTML with CSS Styling - Enhance Your Website</title>
+    <link rel="stylesheet" href="opt.css">
 </head>
+<style>
+    :root{
+    --orange:rgb(80, 64, 35);
+    --font:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    --size:25pt;
+    }
+
+    h2,h1{
+    color: var(--orange);
+    font-family:var(--font);    
+    font-size: var(--size);
+    }  
+
+li,p{
+    font-family:var(--font);
+    color: rgba(59, 11, 53, 0.87);
+}
+
+</style>
 <body>
-    <h1 style="color: rgb(150, 120, 134); font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Commonly Used HTML Entities</h1>
-    <table border="1" cellpadding="10">
-        <thead>
-            <tr>
-                <th>Character</th>
-                <th>Entity Name</th>
-                <th>Entity Number</th>
-                <th>Description</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>&lt;</td>
-                <td>&amp;lt;</td>
-                <td>&amp;#60;</td>
-                <td>Less than symbol</td>
-            </tr>
-            <tr>
-                <td>&gt;</td>
-                <td>&amp;gt;</td>
-                <td>&amp;#62;</td>
-                <td>Greater than symbol</td>
-            </tr>
-            <tr>
-                <td>&amp;</td>
-                <td>&amp;amp;</td>
-                <td>&amp;#38;</td>
-                <td>Ampersand</td>
-            </tr>
-            <tr>
-                <td>&quot;</td>
-                <td>&amp;quot;</td>
-                <td>&amp;#34;</td>
-                <td>Double quotation mark</td>
-            </tr>
-            <tr>
-                <td>&copy;</td>
-                <td>&amp;copy;</td>
-                <td>&amp;#169;</td>
-                <td>Copyright symbol</td>
-            </tr>
-        </tbody>
-    </table>
+    <header>
+        <h1>SEO-Optimized HTML Document</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <h2>About This Document</h2>
+            <p>This HTML document demonstrates how to combine SEO optimization with clean, modern CSS styling to create a user-friendly webpage.</p>
+        </section>
+        <section id="features">
+            <h2>Key Features</h2>
+            <ul>
+                <li>Descriptive title and meta tags for SEO</li>
+                <li>Responsive design for all devices</li>
+                <li>Stylish layout with CSS</li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <center><p>For more information, reach out via email or follow us on social media.</p></center>
+        </section>
+    </main>
+    <center><footer>
+        <p style="color: aliceblue;">&copy; 2024 Nayan Awasthi. All rights reserved.</p>
+    </footer>
+</center>
 </body>
 </html>

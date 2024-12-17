@@ -3,60 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accessibility of HTML</title>
-    <style>
-        body {
-            background-color: #ffffff; 
-            color: #000000;           
-        }
-        a {
-            color: #004aad;           
-        }
-        a:hover {
-            color: #ff4500;           
-        }
-
-        button {
-            padding: 10px 20px;
-            font-size: 16px;
-            border: 2px solid #004aad;
-            background-color: #f1f1f1;
-            color: #004aad;
-            cursor: pointer;
-        }
-        button:focus {
-            outline: none; 
-            border-color: #ff4500; 
-            box-shadow: 0 0 5px #ff4500; 
-        }
-
-        .decorative {
-            font-size: 50px;
-            color: lightgray;
-        }
-        button{
-            width:max-content;
-            border: 2px solid rgb(6, 173, 165);
-            margin: 5px;
-            padding:10px 20px;
-        }
-    </style>
+    <meta name="description" content="Learn about semantic HTML elements and how they improve SEO and document structure.">
+    <meta name="keywords" content="HTML, Semantic Elements, SEO, Web Development">
+    <meta name="author" content="Nayan Awasthi">
+    <title>Semantic HTML Structure</title>
+    <link rel="stylesheet" href="seo.css">
 </head>
 <body>
-    <center><h1 style="color: #ff4500; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">High Contrast Accessibility Example</h1></center>
-    <div style="text-align: center; color: cadetblue; text-decoration:chartreuse; font-size: 15pt; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
-    <p>Ensure that text and background have sufficient contrast.</p>
-    <a href="#" style="color: rgb(19, 128, 128);">Learn more about accessibility</a></div>
+    <header>
+        <h1 style="font-size: 30pt;">Welcome to Semantic HTML</h1>
+        <p>Understanding the importance of proper structure for better SEO and accessibility.</p>
+    </header>
 
-    <center><h1 style="color: rgb(184, 120, 25);  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Focus Indicators Accessibility Example</h1></center>
-    <button style="margin-inline-start:550px;">Click Me</button>
-    <button>Submit</button>
-    
-    <center><h1  style="color: rgb(73, 194, 154);  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Screen Reader Accessibility Example</h1></center>
-    <p style="text-align: center; color: rgb(82, 151, 72);">
-        Welcome to our website! 
-        <span class="decorative" aria-hidden="true">★</span> 
-        We prioritize accessibility for all.
-    </p>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#benefits">Benefits</a></li>
+            <li><a href="#examples">Examples</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="about">
+            <article>
+                <h2>What is Semantic HTML?</h2>
+                <p>Semantic HTML introduces meaning to web elements, making it easier for search engines and assistive technologies to understand the content.</p>
+            </article>
+        </section>
+
+        <section id="benefits">
+            <article>
+                <h2>Benefits of Semantic HTML</h2>
+                <ul>
+                    <li>Improved SEO</li>
+                    <li>Better Accessibility</li>
+                    <li>Cleaner Code Structure</li>
+                    <li>Easier Maintenance</li>
+                </ul>
+            </article>
+        </section>
+
+        <section id="examples">
+            <article>
+                <h2>Examples of Semantic Elements</h2>
+                <p>Common semantic elements include:</p>
+                <ul>
+                    <li><code>&lt;header&gt;</code> for page headers</li>
+                    <li><code>&lt;footer&gt;</code> for page footers</li>
+                    <li><code>&lt;article&gt;</code> for standalone content</li>
+                    <li><code>&lt;section&gt;</code> for grouping related content</li>
+                    <li><code>&lt;nav&gt;</code> for navigation menus</li>
+                </ul>
+            </article>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <p style="color: rgb(163, 111, 111);"><b>Contact us at </b><a href="mailto:nayanawasthi2015@gmail.com" style="color: blueviolet;">nayanawasthi2015@gmail.com</a> <b>or call</b> <a href="tel:7266016649" style="color: blueviolet;">7266016649</a>.</p>
+        <p style="color: rgb(188, 207, 207); font-size: 13pt;">&copy; 2024 Nayan Awasthi. All rights reserved.</p>
+    </footer>
 </body>
 </html>
