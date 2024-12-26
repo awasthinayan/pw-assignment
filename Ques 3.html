@@ -3,130 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Styled Form</title>
+    <title>Document</title>
     <style>
-       
-        :root {
-            --primary-bg: #f4f9f9;
-            --secondary-bg: #dbe2ef;
-            --highlight-bg: #112d4e;
-            --input-bg: #f9f7f7;
-            --button-bg: #3f72af;
-            --button-hover-bg: #1d4b8f;
-            --text-color: #112d4e;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            background-color: var(--primary-bg);
-            color: var(--text-color);
-            margin: 10px;;
+        .links{
+            margin: 40px;
             padding: 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+            margin-inline:100px;
+            border: 14px solid rgb(117, 173, 224);
+            border-radius: 3px;
+            background-color: rgb(125, 174, 221);
         }
 
-        .form-container {
-            background-color: var(--secondary-bg);
-            padding: 20px;
-            border-radius: 10px;
-            width: 100%;
-            max-width: 400px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        .links a {
+            margin-inline: 20px;
+            padding: 5px 10px;
+            text-decoration: none;
+            color: black;
         }
 
-        .form-container .section-opacity {
-            background-color: var(--highlight-bg);
-            padding: 15px;
-            border-radius: 8px;
-            color: #fff;
-            margin-bottom: 20px;
-            opacity: 0.9;
+        .links a:nth-child(1) {
+            border: 2px solid black;
+            border-style: double;
         }
 
-        h2 {
-            text-align: center;
-            margin-bottom: 20px;
-            color: var(--highlight-bg);
+        .links a:nth-child(2) {
+            border: 2px solid black;
+            border-style: dashed;
         }
 
-        label {
-            display: block;
-            margin-bottom:2px;
-            font-weight: bold;
+        .links a:nth-child(3) {
+            border: 2px solid black;
+            border-style: dotted;
         }
 
-        input[type="text"],
-        input[type="email"],
-        input[type="password"],
-        textarea,
-        select {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
-            border: 1px solid var(--highlight-bg);
-            border-radius: 5px;
-            background-color: var(--input-bg);
-            font-size: 14px;
+        .links a:nth-child(4) {
+            border: 2px solid black;
+            border-style: groove;
         }
 
-        textarea {
-            resize: none;
-            height: 100px;
-        }
-
-        button {
-            width: 100%;
-            padding: 10px;
-            background-color: var(--button-bg);
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-
-        button:hover {
-            background-color: var(--button-hover-bg);
+        .links a:nth-child(5) {
+            border: 2px solid black;
+            border-style: inset;
         }
     </style>
 </head>
 <body>
-    <div class="form-container">
-        <h2>Registration Form</h2>
-
-        <div class="section-opacity">
-            <p>Fill out this form to register for the event.</p>
-        </div>
-
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
-
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" placeholder="Enter a password" required>
-
-            <label for="gender">Gender:</label>
-            <select id="gender" name="gender">
-                <option value="male">Male</option>
-                <option value="female">Female</option>
-                <option value="other">Other</option>
-            </select>
-
-            <label for="bio">Bio:</label>
-            <textarea id="bio" name="bio" placeholder="Tell us about yourself..."></textarea>
-
-            <label>
-                <input type="checkbox" name="terms" required> I agree to the terms and conditions
-            </label>
-
-            <button type="submit">Submit</button>
-        </form>
-    </div>
+    <nav class="links">
+        <a href="#######.com">Home</a>
+        <a href="######233.com">About Us</a>
+        <a href="#######435.com">Contact</a>
+        <a href="#######5454.com">Blog</a>
+        <a href="#######2357.com">Login</a>
+    </nav>
 </body>
 </html>
