@@ -3,37 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Positioning Difference Table</title>
     <style>
-        body{
-            text-align: center;
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f8f8f8;
         }
-        .image{
-        border:0 solid skyblue;
-        border-radius: 20px;
-        width: 330px;
-        color: aqua;
-        background-color: rgba(218, 221, 23, 0.788);
-        margin: 10px;
-        padding: 10px;
-        margin-top:5px;
-        text-align: center;
-        margin-inline:500px;
-        height: 340px;
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #333;
+            color: #fff;
+        }
+
+        td {
+            background-color: #fefefe;
+        }
+
+        .example-container {
+            display: flex;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .example-box {
+            border: 1px solid #ccc;
+            width: 200px;
+            height: 200px;
+            position: relative; /* Reference point for absolute positioning */
+            background-color: #f1f1f1;
+        }
+
+        .relative-box {
+            position: relative;
+            top: 20px;
+            left: 20px;
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            text-align: center;
+            line-height: 100px;
+        }
+
+        .absolute-box {
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            width: 100px;
+            height: 100px;
+            background-color: lightcoral;
+            text-align: center;
+            line-height: 100px;
         }
     </style>
 </head>
 <body>
-    <div class="image">
-    <img src="https://cdn.pwskills.com/assets/uploads/thumbnails/64215310af09d6aa495682f5.png" alt="PW image" height="300px" width="330px" style="border-radius: 20px;">
-    <p style="color: black;"><b>Course Name:PW Skills web development</b>
-    </p></div>
-    <p style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 17pt;">Typically, course designers design a Full Stack Web Development Course to teach individuals the necessary skills and knowledge to develop web applications from start to finish.
-    This means that the course covers both the front-end development (client-side) and back-end development (server-side) aspects of web development.
+    <center style="color: firebrick; background-color: rgb(218, 218, 169); border-radius: 30px; height: 50pt; width:1000px; margin-inline:150px; padding:2px;"><h1>Difference Between Relative and Absolute Positioning</h1></center>
 
-        Front-end development involves designing and developing the user interface, which includes the layout, design, and functionality of the website or application that users see and interact with. This typically involves using technologies such as HTML, CSS, and JavaScript.
-        
-         On the other hand, back-end development involves working with server-side technologies such as databases, servers, and programming languages like Python, Ruby, or JavaScript to create the logic behind the scenes that makes the application function.</p>
-    
+    <table>
+        <thead>
+            <tr>
+                <th>Feature</th>
+                <th>Relative Positioning</th>
+                <th>Absolute Positioning</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Reference Point</td>
+                <td>Its original position in the document flow.</td>
+                <td>The nearest positioned ancestor (or the `<html>` if none exists).</td>
+            </tr>
+            <tr>
+                <td>Impact on Layout</td>
+                <td>Element remains in the flow and affects other elements.</td>
+                <td>Element is removed from the flow and does not affect other elements.</td>
+            </tr>
+            <tr>
+                <td>Offset Properties</td>
+                <td>Moves the element relative to its normal position.</td>
+                <td>Positions the element based on the reference point.</td>
+            </tr>
+            <tr>
+                <td>Common Usage</td>
+                <td>For slight adjustments and creating reference points.</td>
+                <td>For precise placement, overlays, or independent elements.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Visual Examples</h2>
+    <div class="example-container">
+        <!-- Relative Positioning Example -->
+        <div class="example-box">
+            <div class="relative-box">Relative</div>
+        </div>
+
+        <!-- Absolute Positioning Example -->
+        <div class="example-box">
+            <div class="absolute-box">Absolute</div>
+        </div>
+    </div>
 </body>
 </html>
