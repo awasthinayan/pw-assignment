@@ -1,120 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Positioning Difference Table</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            background-color: #f8f8f8;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-        }
-
-        th, td {
-            border: 1px solid #ccc;
-            padding: 10px;
-            text-align: left;
-        }
-
-        th {
-            background-color: #333;
-            color: #fff;
-        }
-
-        td {
-            background-color: #fefefe;
-        }
-
-        .example-container {
-            display: flex;
-            gap: 20px;
-            margin-top: 20px;
-        }
-
-        .example-box {
-            border: 1px solid #ccc;
-            width: 200px;
-            height: 200px;
-            position: relative; /* Reference point for absolute positioning */
-            background-color: #f1f1f1;
-        }
-
-        .relative-box {
-            position: relative;
-            top: 20px;
-            left: 20px;
-            width: 100px;
-            height: 100px;
-            background-color: lightblue;
-            text-align: center;
-            line-height: 100px;
-        }
-
-        .absolute-box {
-            position: absolute;
-            top: 50px;
-            left: 50px;
-            width: 100px;
-            height: 100px;
-            background-color: lightcoral;
-            text-align: center;
-            line-height: 100px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Properties</title>
+  <link rel="stylesheet" href="Q_2.css">
 </head>
 <body>
-    <center style="color: firebrick; background-color: rgb(218, 218, 169); border-radius: 30px; height: 50pt; width:1000px; margin-inline:150px; padding:2px;"><h1>Difference Between Relative and Absolute Positioning</h1></center>
-
-    <table>
-        <thead>
-            <tr>
-                <th>Feature</th>
-                <th>Relative Positioning</th>
-                <th>Absolute Positioning</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Reference Point</td>
-                <td>Its original position in the document flow.</td>
-                <td>The nearest positioned ancestor (or the `<html>` if none exists).</td>
-            </tr>
-            <tr>
-                <td>Impact on Layout</td>
-                <td>Element remains in the flow and affects other elements.</td>
-                <td>Element is removed from the flow and does not affect other elements.</td>
-            </tr>
-            <tr>
-                <td>Offset Properties</td>
-                <td>Moves the element relative to its normal position.</td>
-                <td>Positions the element based on the reference point.</td>
-            </tr>
-            <tr>
-                <td>Common Usage</td>
-                <td>For slight adjustments and creating reference points.</td>
-                <td>For precise placement, overlays, or independent elements.</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <h2>Visual Examples</h2>
-    <div class="example-container">
-        <!-- Relative Positioning Example -->
-        <div class="example-box">
-            <div class="relative-box">Relative</div>
-        </div>
-
-        <!-- Absolute Positioning Example -->
-        <div class="example-box">
-            <div class="absolute-box">Absolute</div>
-        </div>
-    </div>
+  <center><h1>Key Properties in Flexbox</h1></center>
+  <table>
+    <thead>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Example</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>justify-content</code></td>
+        <td>Controls the alignment of items along the main axis (horizontal).</td>
+        <td>
+          <div class="property-example" style="justify-content: space-around;">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+          </div>
+          <em>Example: <code>justify-content: space-around;</code></em>
+        </td>
+      </tr>
+      <tr>
+        <td><code>align-items</code></td>
+        <td>Aligns items along the cross-axis (vertical).</td>
+        <td>
+          <div class="property-example" style="align-items: center; height: 100px;">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+          </div>
+          <em>Example: <code>align-items: center;</code></em>
+        </td>
+      </tr>
+      <tr>
+        <td><code>gap</code></td>
+        <td>Defines the spacing between flex items.</td>
+        <td>
+          <div class="property-example" style="gap: 20px;">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+          </div>
+          <em>Example: <code>gap: 20px;</code></em>
+        </td>
+      </tr>
+      <tr>
+        <td><code>flex-direction</code></td>
+        <td>Specifies the direction of the main axis (row or column).</td>
+        <td>
+          <div class="property-example" style="flex-direction: column;">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+          </div>
+          <em>Example: <code>flex-direction: column;</code></em>
+        </td>
+      </tr>
+      <tr>
+        <td><code>flex-wrap</code></td>
+        <td>Determines whether items should wrap to the next line if necessary.</td>
+        <td>
+          <div class="property-example" style="flex-wrap: wrap; width: 200px;">
+            <div class="box" style="flex: 1 1 100px;">1</div>
+            <div class="box" style="flex: 1 1 100px;">2</div>
+            <div class="box" style="flex: 1 1 100px;">3</div>
+            <div class="box" style="flex: 1 1 100px;">4</div>
+          </div>
+          <em>Example: <code>flex-wrap: wrap;</code></em>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </body>
 </html>
