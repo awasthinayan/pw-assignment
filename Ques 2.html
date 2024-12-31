@@ -1,84 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Flexbox Properties</title>
-  <link rel="stylesheet" href="Q_2.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            border: 2px solid black;
+            width: fit-content;
+            padding: 2px;
+            margin: 50px;
+        }
+        .content{
+            display: grid;
+            grid-template-columns: repeat(3,90px);
+            grid-template-rows: repeat(2,70px);
+            padding: 10px;
+            gap: 7px;
+        }
+
+        .con-1{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 2; 
+        }
+
+        .con-2{
+            grid-column-start:3;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 3; 
+        }
+
+        .con-3{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 2;
+            grid-row-end: 3; 
+        }
+
+        .con-4{
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            grid-row-end: 3; 
+        }
+    </style>
 </head>
 <body>
-  <center><h1>Key Properties in Flexbox</h1></center>
-  <table>
-    <thead>
-      <tr>
-        <th>Property</th>
-        <th>Description</th>
-        <th>Example</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><code>justify-content</code></td>
-        <td>Controls the alignment of items along the main axis (horizontal).</td>
-        <td>
-          <div class="property-example" style="justify-content: space-around;">
-            <div class="box">1</div>
-            <div class="box">2</div>
-            <div class="box">3</div>
-          </div>
-          <em>Example: <code>justify-content: space-around;</code></em>
-        </td>
-      </tr>
-      <tr>
-        <td><code>align-items</code></td>
-        <td>Aligns items along the cross-axis (vertical).</td>
-        <td>
-          <div class="property-example" style="align-items: center; height: 100px;">
-            <div class="box">1</div>
-            <div class="box">2</div>
-            <div class="box">3</div>
-          </div>
-          <em>Example: <code>align-items: center;</code></em>
-        </td>
-      </tr>
-      <tr>
-        <td><code>gap</code></td>
-        <td>Defines the spacing between flex items.</td>
-        <td>
-          <div class="property-example" style="gap: 20px;">
-            <div class="box">1</div>
-            <div class="box">2</div>
-            <div class="box">3</div>
-          </div>
-          <em>Example: <code>gap: 20px;</code></em>
-        </td>
-      </tr>
-      <tr>
-        <td><code>flex-direction</code></td>
-        <td>Specifies the direction of the main axis (row or column).</td>
-        <td>
-          <div class="property-example" style="flex-direction: column;">
-            <div class="box">1</div>
-            <div class="box">2</div>
-            <div class="box">3</div>
-          </div>
-          <em>Example: <code>flex-direction: column;</code></em>
-        </td>
-      </tr>
-      <tr>
-        <td><code>flex-wrap</code></td>
-        <td>Determines whether items should wrap to the next line if necessary.</td>
-        <td>
-          <div class="property-example" style="flex-wrap: wrap; width: 200px;">
-            <div class="box" style="flex: 1 1 100px;">1</div>
-            <div class="box" style="flex: 1 1 100px;">2</div>
-            <div class="box" style="flex: 1 1 100px;">3</div>
-            <div class="box" style="flex: 1 1 100px;">4</div>
-          </div>
-          <em>Example: <code>flex-wrap: wrap;</code></em>
-        </td>
-      </tr>
-    </tbody>
-  </table>
+    <div class="content">
+        <div class="con-1" style="border: 0 solid black; border-radius: 5px; background-color: rgb(221, 165, 184); padding: 20px; color: rgb(255, 255, 255);">A</div>
+        <div class="con-2"  style="border: 0 solid black; border-radius: 5px; background-color: rgb(241, 156, 184);  padding: 20px; color: rgb(255, 255, 255);">B</div>
+        <div class="con-3"  style="border: 0 solid black; border-radius: 5px; background-color: rgb(241, 156, 184);  padding: 20px; color: rgb(255, 255, 255);">C</div>
+        <div class="con-4"  style="border: 0 solid black; border-radius: 5px; background-color: rgb(231, 138, 169);  padding: 20px; color: rgb(255, 255, 255);">D</div>
+    </div>
 </body>
 </html>

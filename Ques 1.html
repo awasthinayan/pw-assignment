@@ -1,69 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Flexbox vs Grid</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 20px;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-    }
-    th, td {
-      border: 1px solid #ccc;
-      padding: 10px;
-      text-align: left;
-    }
-    th {
-      background-color: #f4f4f4;
-    }
-    .highlight {
-      background-color: #e7f3fe;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            border: 2px solid rgb(126, 126, 13);
+        }
+        img{
+            height: 100%;
+            width: 100%;
+        }
+        .imgs{
+            display: grid;
+            grid-template-columns:repeat(3,1fr);
+            grid-template-rows: repeat(3,180px);
+            gap: 10px;
+            padding:10px;
+        }
+        .img-1{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 2; 
+        }
+
+        .img-2{
+            grid-column-start:2;
+            grid-column-end:3;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+
+        .img-3{
+            grid-column-start:3;
+            grid-column-end:4;
+            grid-row-start:1;
+            grid-row-end: 2;
+        }
+        
+        .img-4{
+            grid-column-start:1;
+            grid-column-end:2;
+            grid-row-start:2;
+            grid-row-end: 4;
+        }
+
+        .img-5{
+            grid-column-start:2;
+            grid-column-end:3;
+            grid-row-start:3;
+            grid-row-end: 4;
+        }
+
+        .img-6{
+            grid-column-start:3;
+            grid-column-end:4;
+            grid-row-start:2;
+            grid-row-end: 4;
+            height: 100%;
+            width:100%;
+        }
+    </style>
 </head>
 <body>
-  <center><h1>Difference Between Flexbox and Grid</h1></center>
-  <table>
-    <thead>
-      <tr>
-        <th>Feature</th>
-        <th>Flexbox</th>
-        <th>Grid</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Layout Type</td>
-        <td>One-dimensional layout (row or column).</td>
-        <td>Two-dimensional layout (rows and columns).</td>
-      </tr>
-      <tr class="highlight">
-        <td>Alignment</td>
-        <td>Great for aligning and distributing space in a single axis.</td>
-        <td>Great for defining precise placement in both axes.</td>
-      </tr>
-      <tr>
-        <td>Use Case</td>
-        <td>Best for simpler layouts like navbars or centering items.</td>
-        <td>Best for creating complex page layouts with rows and columns.</td>
-      </tr>
-      <tr class="highlight">
-        <td>Flexibility</td>
-        <td>Items adapt dynamically to content size along a single axis.</td>
-        <td>Allows fixed or dynamic positioning in a grid structure.</td>
-      </tr>
-      <tr>
-        <td>When to Use</td>
-        <td>For simple, single-direction layouts.</td>
-        <td>For multi-directional, structured layouts.</td>
-      </tr>
-    </tbody>
-  </table>
-</body>
-</html>
+<div class="imgs">
+<div class="img-1">
+    <img src="download.jpg">
+</div>
 
+<div class="img-2">
+    <img src="download (1).jpg">
+</div>
+
+<div class="img-3">
+    <img src="download (2).jpg">
+</div>
+
+<div class="img-4">
+    <img src="download (3).jpg">
+</div>
+
+<div class="img-5">
+    <img src="download.jpg">
+</div>
+
+<div class="img-6">
+    <img src="images.jpg">
+</div>
+</div>
+<body>
+</html>

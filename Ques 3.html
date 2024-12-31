@@ -3,26 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>grid-auto-rows Example</title>
     <style>
-        .center{
-            display: flex;
-            justify-content: center;
-             align-items: center;
-             height: 100vh;
-        }
 
-        .block{
-            width: 200px;
-            height: 200px;
-            background-color: rgb(39, 218, 16);
-            border-radius: 5px;
+.grid-container {
+            display: grid;
+            grid-template-rows: 100px 100px; 
+            grid-auto-columns: 50px; 
+            border: 1px solid black;
+        }
+        .grid-item {
+            border: 1px solid blue;
+            padding: 10px;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: 100px 100px;
+            grid-auto-rows: 50px;
+            border: 1px solid black;
+        }
+        .grid-item {
+            border: 1px solid blue;
+            padding: 10px;
         }
     </style>
 </head>
 <body>
-    <div class="center">
-        <div class="block"></div>
+    <section class="row">
+    <h1 style="margin-inline:20px;">grid-auto-rows:</h1>
+    <ul><li>Specifies the sizepxf rows automatically created by the grid when items are placed in rows not explicitly defined in the grid template.</li></ul>
+    <h3>Below is given an exampe of Justify-items:</h3>
+    <div class="grid-container">
+        <div class="grid-item" style="grid-row: 1 / 2; grid-column: 1 / 2;">1</div>
+        <div class="grid-item" style="grid-row: 3 / 4; grid-column: 1 / 2;">2</div>
     </div>
+</section>
+<br><hr>
+<section class="column">
+    <h1 style="margin-inline: 20px;">grid-auto-colmns:</h1>
+    <ul><li>Specifies the size of columns automatically created by the grid when items are placed in columns not explicitly defined in the grid template.</li></ul>
+    <h3>Below is given an exampe of Justify-items:</h3>
+    <div class="grid-container">
+        <div class="grid-item" style="grid-row: 1 / 2; grid-column: 1 / 2;">1</div>
+        <div class="grid-item" style="grid-row: 1 / 2; grid-column: 3 / 4;">2</div>
+    </div>
+    </section>
+</section>
 </body>
 </html>
