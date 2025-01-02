@@ -5,49 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    <style>
-        body{
-            display: flex;
-            gap: 200px;
-        }
-        main ul li a{
-            list-style: none;
-            text-decoration: none;
-        }
-
-        main ul >li{
-            display: inline;
-        }
-
-       main li+li{
-            margin: 10px;
-        }
+<style>
+    .main{
+        border: 2px solid;
+        background-color: #cccccc79;
+    }
+    .loader {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: 5px solid #ccc; 
+        border-top: 5px solid #3498db; 
+        animation: spin 1s linear infinite;
+        margin: 270px;
+      }
+      
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
     </style>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-<div>
-   <img src="https://media.istockphoto.com/id/1750776853/vector/straight-long-arrow-right-thin-line-black-cursor-horizontal-element-thick-pointer-vector.jpg?s=612x612&w=0&k=20&c=kpJZV7c7XEb-LbAqTDYcwWwLm7e4a1wrjN5SQtgHCs8=" height="100px" width="100px">
-</div>
-    <main>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </main>
+    
+<body><section class="main">
+   <center> <div class="loader"></div></center>
+</section>
 </body>
 </html>

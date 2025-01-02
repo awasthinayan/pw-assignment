@@ -6,45 +6,40 @@
     <title>Document</title>
 </head>
 <style>
-    ul > li{
-        color: green;
+    body{
+        border:2px solid ;
+        height: 100vh;
+    }
+    :root{
+      --blue:#00b7ff;
+      --grey:#6c757d;
+      }
+
+    #primaryBtn{
+        background-color: var(--blue);
+        border: none;
+        padding: 5px;
     }
 
-    ul a{
-        color: red;
-        text-decoration: none;
+    #secondaryBtn{
+        background-color: var(--grey);
+        border: none;
+        padding: 5px;
+        margin: 5px;
     }
-
-    p:nth-child(even)::first-letter{
-        color: red;
-        font-size: 30px;
-    }
-
-p:last-child::after{
-    content: "....";
-}
 </style>
 <body>
-    <header>
-        <nav>
-            <h2 style="color: red;">TOI</h2>
-            <div>
-                <h2>Menu</h2>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#" class="ab" style="color: blue; text-decoration: underline; background-color: grey;">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
+    <button id="primaryBtn">Primary Button</button>
+    <button id="secondaryBtn">Secondary Button</button>
 
-            <p>The times of India</p>
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, accusamus est. Nisi pariatur ullam quod, eaque nobis fuga? Quae perspiciatis expedita saepe reiciendis atque quos ipsam ullam facilis, magni autem velit. Ut velit earum autem ducimus pariatur? Voluptatum nobis fuga magnam praesentium, iste commodi quia sit itaque sapiente? Voluptatum, id.
-            </p>
+    <section>
 
-            <p>read more articles</p>
-        </nav>
-    </header>
+<p>The var() function in CSS is used to reference custom properties (commonly known as CSS variables). It allows you to reuse values throughout your stylesheets, making them easier to maintain and update. Custom properties are declared using the -- prefix, and the var() function retrieves their values.</p>
+
+<h2>Key Features of var()</h2>
+<p><b>Reusability:</b> Define a value once and reuse it across multiple styles.</p>
+<p><b>Maintainability:</b> Change the value in one place, and it updates everywhere it's used.</p>
+<p><b>Dynamic Styling:</b> Easily update styles dynamically using JavaScript by modifying custom properties.</p>
+    </section>
 </body>
 </html>
