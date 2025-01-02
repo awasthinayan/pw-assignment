@@ -4,56 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        body{
-            border: 2px solid black;
-            width: fit-content;
-            padding: 2px;
-            margin: 50px;
-        }
-        .content{
-            display: grid;
-            grid-template-columns: repeat(3,90px);
-            grid-template-rows: repeat(2,70px);
-            padding: 10px;
-            gap: 7px;
-        }
-
-        .con-1{
-            grid-column-start: 1;
-            grid-column-end: 3;
-            grid-row-start: 1;
-            grid-row-end: 2; 
-        }
-
-        .con-2{
-            grid-column-start:3;
-            grid-column-end: 4;
-            grid-row-start: 1;
-            grid-row-end: 3; 
-        }
-
-        .con-3{
-            grid-column-start: 1;
-            grid-column-end: 2;
-            grid-row-start: 2;
-            grid-row-end: 3; 
-        }
-
-        .con-4{
-            grid-column-start: 2;
-            grid-column-end: 3;
-            grid-row-start: 2;
-            grid-row-end: 3; 
-        }
-    </style>
 </head>
+<style>
+    
+    .images{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        border: 2px solid black;
+    }
+    .images img{
+        width: 30%;
+        margin:0;
+    }
+    @media screen and (max-width:800px)
+    {
+        .images img{
+            background-color:rgb(22, 107, 107);
+            width: 45%;
+        }
+    }
+
+    @media screen and (max-width:500px)
+    {
+        .images img{
+            background-color: rgb(10, 158, 158);
+            width: 100%;
+        }
+    }
+    </style>
 <body>
-    <div class="content">
-        <div class="con-1" style="border: 0 solid black; border-radius: 5px; background-color: rgb(221, 165, 184); padding: 20px; color: rgb(255, 255, 255);">A</div>
-        <div class="con-2"  style="border: 0 solid black; border-radius: 5px; background-color: rgb(241, 156, 184);  padding: 20px; color: rgb(255, 255, 255);">B</div>
-        <div class="con-3"  style="border: 0 solid black; border-radius: 5px; background-color: rgb(241, 156, 184);  padding: 20px; color: rgb(255, 255, 255);">C</div>
-        <div class="con-4"  style="border: 0 solid black; border-radius: 5px; background-color: rgb(231, 138, 169);  padding: 20px; color: rgb(255, 255, 255);">D</div>
+    <div class="images">
+    <img src="https://media.istockphoto.com/id/2134755345/photo/passo-giau-landscape-in-italy.webp?a=1&b=1&s=612x612&w=0&k=20&c=ZJBrsxwByU0VRgssV0N10WCwGn8iFJSDIZZgUhasesk="
+      height="600px" width="430px">
+
+      <img src="https://media.istockphoto.com/id/2134755345/photo/passo-giau-landscape-in-italy.webp?a=1&b=1&s=612x612&w=0&k=20&c=ZJBrsxwByU0VRgssV0N10WCwGn8iFJSDIZZgUhasesk="
+      height="600px" width="430px">
+
+      <img src="https://images.unsplash.com/photo-1566679056462-2075774c8c07?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW91bnRhaW5zfGVufDB8fDB8fHww"
+      height="600px" width="430px">
     </div>
 </body>
 </html>

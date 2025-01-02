@@ -1,103 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body{
-            border: 2px solid black;
-            width: fit-content;
-            margin: 50px;
-        }
-        .box:nth-child(odd){
-            background-color: rgba(0, 0, 0, 0.801);
-            color: white;
-        }
-
-        .box:nth-child(even){
-            background-color: silver;
-        }
-        .box{
-            height: 100%;
-            width: 100%;
-            border-radius: 7px;
-        }
-        .container{
-            display: grid;
-            grid-template-columns: repeat(6,120px);
-            grid-template-rows: repeat(2,80px);
-            padding: 20px;
-            gap: 8px;
-
-        }
-        .box-3{
-            grid-column-start: 1;
-            grid-column-end: 2;
-            grid-row-start: 1;
-            grid-row-end: 2;    
-        }
-
-        .box-4{
-            grid-column-start: 2;
-            grid-column-end: 3;
-            grid-row-start: 1;
-            grid-row-end: 2;    
-        } 
-
-        .box-5{
-            grid-column-start:3;
-            grid-column-end: 4;
-            grid-row-start: 1;
-            grid-row-end: 2;    
-        }
-         
-        .box-6{
-            grid-column-start: 4;
-            grid-column-end: 5;
-            grid-row-start: 1;
-            grid-row-end: 2;    
-        } 
-
-        .box-7{
-            grid-column-start:5;
-            grid-column-end: 6;
-            grid-row-start: 1;
-            grid-row-end: 2;    
-        }
-         
-        .box-8{
-            grid-column-start: 6;
-            grid-column-end:7;
-            grid-row-start: 1;
-            grid-row-end: 2;    
-        }
-
-        .box-1{
-            grid-column-start: 1;
-            grid-column-end: 2;
-            grid-row-start: 2;
-            grid-row-end: 3;    
-        }
-
-        .box-2{
-            grid-column-start: 2;
-            grid-column-end: 3;
-            grid-row-start: 1;
-            grid-row-end: 2;    
-        }
-    </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="styles.css" />
+<title>Responsive Grid Layout Example</title>
 </head>
+<style>
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+}
+.grid-container {
+display: grid;
+grid-template-columns: 1fr;
+gap: 20px;
+padding: 20px;
+background-color: #f5f5f5;
+min-height: 100vh;
+}
+.item {
+background-color: #ddd;
+padding: 20px;
+text-align: center;
+}
+.header {
+background-color: red;
+color: white;
+}
+.sidebar {
+background-color: green;
+color: white;
+}
+.main {
+background-color: blue;
+color: white;
+}
+.footer {
+background-color: chocolate;
+color: white;
+}
+
+@media screen and (min-width: 768px) {
+.grid-container {
+grid-template-columns: repeat(3, 1fr);
+grid-template-areas:
+"header header header"
+"sidebar main main"
+"footer footer footer";
+}
+}
+</style>
 <body>
-    <div class="container">
-        <div class="box box1"><p style="margin-inline: 15px; padding: 10px;">3</p></div>
-        <div class="box box2"><p style="margin-inline: 15px; padding: 10px;">4</p></div>
-        <div class="box box3"><p style="margin-inline: 15px; padding: 10px;">5</p></div>
-        <div class="box box4"><p style="margin-inline: 15px; padding: 10px;">6</p></div>
-        <div class="box box5"><p style="margin-inline: 15px; padding: 10px;">7</p></div>
-        <div class="box box6"><p style="margin-inline: 15px; padding: 10px;">8</p></div>
-        <div class="box box7"><p style="margin-inline: 15px; padding: 10px;">1</p></div>
-        <div class="box box8"><p style="margin-inline: 15px; padding: 10px;">2</p></div>
-        </div>
+<div class="grid-container">
+<div class="item header">Box1</div>
+<div class="item sidebar">Box2</div>
+<div class="item main">Box3</div>
+<div class="item footer">Box4</div>
+</div>
 </body>
 </html>
