@@ -4,26 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        header{
-            text-align: center;
-            height: 40px;
-            width: 100%;
-            background-color: rgba(192, 192, 192, 0.596);
-            font-size: 20pt;
-            padding: 30px;
-        }
-        @media screen and (max-width:600px) {
-            header{
-                background-color:blue;
-                color: aliceblue;
-            }
-        }
-    </style>
 </head>
+<style>
+    ul > li{
+        color: green;
+    }
+
+    ul a{
+        color: red;
+        text-decoration: none;
+    }
+
+    p:nth-child(even)::first-letter{
+        color: red;
+        font-size: 30px;
+    }
+
+p:last-child::after{
+    content: "....";
+}
+</style>
 <body>
-    <header>Responsive Header</header>
-    <h3>Main Content</h3>
-    <h3>Footer</h3>
+    <header>
+        <nav>
+            <h2 style="color: red;">TOI</h2>
+            <div>
+                <h2>Menu</h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#" class="ab" style="color: blue; text-decoration: underline; background-color: grey;">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <p>The times of India</p>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, accusamus est. Nisi pariatur ullam quod, eaque nobis fuga? Quae perspiciatis expedita saepe reiciendis atque quos ipsam ullam facilis, magni autem velit. Ut velit earum autem ducimus pariatur? Voluptatum nobis fuga magnam praesentium, iste commodi quia sit itaque sapiente? Voluptatum, id.
+            </p>
+
+            <p>read more articles</p>
+        </nav>
+    </header>
 </body>
 </html>

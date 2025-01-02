@@ -1,62 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="stylesheet" href="styles.css" />
-<title>Responsive Grid Layout Example</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <style>
-body {
-margin: 0;
-font-family: Arial, sans-serif;
-}
-.grid-container {
-display: grid;
-grid-template-columns: 1fr;
-gap: 20px;
-padding: 20px;
-background-color: #f5f5f5;
-min-height: 100vh;
-}
-.item {
-background-color: #ddd;
-padding: 20px;
-text-align: center;
-}
-.header {
-background-color: red;
-color: white;
-}
-.sidebar {
-background-color: green;
-color: white;
-}
-.main {
-background-color: blue;
-color: white;
-}
-.footer {
-background-color: chocolate;
-color: white;
-}
+    body{
+      display:flex;
+      gap: 300px;
+    }
+    .before{
+        background-color: royalblue;
+        border: none;
+        margin-top: 100px;
+        margin-left: 100px;
+        padding: 15px 30px;
+        color: #ffffff;
+        font-size: 18px;
+        border-radius: 10px;
+    }
 
-@media screen and (min-width: 768px) {
-.grid-container {
-grid-template-columns: repeat(3, 1fr);
-grid-template-areas:
-"header header header"
-"sidebar main main"
-"footer footer footer";
-}
-}
+    .after{
+        background-color: royalblue;
+        border: none;
+        margin-top: 100px;
+        margin-left: 100px;
+        padding: 15px 30px;
+        color: #ffffff;
+        font-size: 18px;
+        border-radius: 10px;
+    }
+
+    .after:hover{
+        cursor: pointer;
+        box-shadow: 15px 7px 7px rgba(128, 128, 128, 0.479);
+        background-color: rgba(19, 79, 102, 0.445);
+        border-radius: 20px;
+        transition-delay: 1s;
+        transition: width 2s, height 2s, transform 2s;
+    }
 </style>
 <body>
-<div class="grid-container">
-<div class="item header">Box1</div>
-<div class="item sidebar">Box2</div>
-<div class="item main">Box3</div>
-<div class="item footer">Box4</div>
-</div>
+    <button class="before">PW Skills</button>
+    <img src="https://media.istockphoto.com/id/1750776853/vector/straight-long-arrow-right-thin-line-black-cursor-horizontal-element-thick-pointer-vector.jpg?s=612x612&w=0&k=20&c=kpJZV7c7XEb-LbAqTDYcwWwLm7e4a1wrjN5SQtgHCs8=" height="100px" width="100px">
+
+    <button class="after">PW Skills</button>
 </body>
 </html>

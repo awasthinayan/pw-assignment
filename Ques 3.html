@@ -6,33 +6,15 @@
     <title>Document</title>
 </head>
 <style>
-   header{
-    display: flex;
-justify-content: space-around;
-background-color: black;
-   }
+    h1::after{
+        content:"Selector";
+    }
 
-    header h4{
-    text-decoration: none;
-padding: 5px;
-color: white;
-   }
-
-    @media screen and (max-width:768px){
-        header{
-            flex-direction: column;
-            text-align: center;
-            background-color: grey;
-        }
+    h1::before{
+        content: "Pseudo";
     }
 </style>
 <body>
-    <header>
-        <h4>Home</h4>
-        <h4>Services</h4>
-        <h4>About</h4>
-        <h4>Portfolio</h4>
-        <h4>Contact</h4>
-    </header>
+    <h1>-Element-</h1>
 </body>
 </html>

@@ -5,44 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<style>
-    
-    .images{
-        display:flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        border: 2px solid black;
-    }
-    .images img{
-        width: 30%;
-        margin:0;
-    }
-    @media screen and (max-width:800px)
-    {
-        .images img{
-            background-color:rgb(22, 107, 107);
-            width: 45%;
-        }
-    }
-
-    @media screen and (max-width:500px)
-    {
-        .images img{
-            background-color: rgb(10, 158, 158);
-            width: 100%;
-        }
-    }
-    </style>
 <body>
-    <div class="images">
-    <img src="https://media.istockphoto.com/id/2134755345/photo/passo-giau-landscape-in-italy.webp?a=1&b=1&s=612x612&w=0&k=20&c=ZJBrsxwByU0VRgssV0N10WCwGn8iFJSDIZZgUhasesk="
-      height="600px" width="430px">
+    <style>
+        body{
+            display: flex;
+            gap: 200px;
+        }
+        main ul li a{
+            list-style: none;
+            text-decoration: none;
+        }
 
-      <img src="https://media.istockphoto.com/id/2134755345/photo/passo-giau-landscape-in-italy.webp?a=1&b=1&s=612x612&w=0&k=20&c=ZJBrsxwByU0VRgssV0N10WCwGn8iFJSDIZZgUhasesk="
-      height="600px" width="430px">
+        main ul >li{
+            display: inline;
+        }
 
-      <img src="https://images.unsplash.com/photo-1566679056462-2075774c8c07?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW91bnRhaW5zfGVufDB8fDB8fHww"
-      height="600px" width="430px">
-    </div>
+       main li+li{
+            margin: 10px;
+        }
+    </style>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+<div>
+   <img src="https://media.istockphoto.com/id/1750776853/vector/straight-long-arrow-right-thin-line-black-cursor-horizontal-element-thick-pointer-vector.jpg?s=612x612&w=0&k=20&c=kpJZV7c7XEb-LbAqTDYcwWwLm7e4a1wrjN5SQtgHCs8=" height="100px" width="100px">
+</div>
+    <main>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </main>
 </body>
 </html>
