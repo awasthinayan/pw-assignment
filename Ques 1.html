@@ -4,42 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <style>
-    body{
-        border:2px solid ;
-        height: 100vh;
-    }
-    :root{
-      --blue:#00b7ff;
-      --grey:#6c757d;
-      }
-
-    #primaryBtn{
-        background-color: var(--blue);
-        border: none;
-        padding: 5px;
+    .border{
+        margin-inline: 400px;
+        background-color: rgba(250, 246, 239, 0.411);
+        border-radius: 15px;
     }
 
-    #secondaryBtn{
-        background-color: var(--grey);
-        border: none;
-        padding: 5px;
-        margin: 5px;
+    .btn{
+        width: 270px;
+    }
+    h3,p{
+        margin-inline: 15px;
     }
 </style>
 <body>
-    <button id="primaryBtn">Primary Button</button>
-    <button id="secondaryBtn">Secondary Button</button>
-
-    <section>
-
-<p>The var() function in CSS is used to reference custom properties (commonly known as CSS variables). It allows you to reuse values throughout your stylesheets, making them easier to maintain and update. Custom properties are declared using the -- prefix, and the var() function retrieves their values.</p>
-
-<h2>Key Features of var()</h2>
-<p><b>Reusability:</b> Define a value once and reuse it across multiple styles.</p>
-<p><b>Maintainability:</b> Change the value in one place, and it updates everywhere it's used.</p>
-<p><b>Dynamic Styling:</b> Easily update styles dynamically using JavaScript by modifying custom properties.</p>
-    </section>
+    <div class="object ps-lg-2 m-lg-5">
+    <div class="border p-1 border-dark-subtle d-lg-inline-block">
+    <img src="https://media.licdn.com/dms/image/v2/D4D10AQEMb_zypEcHQQ/image-shrink_800/image-shrink_800/0/1686962943033?e=2147483647&v=beta&t=OuaYJF9nz9g7dovchgiAakiLe7sIah-KGcIkiEQB9_Q"
+    class="round rounded-3" height="200px" width="300px ">
+     <h3>Full Stack Web <br>
+        Development</h3>
+        <p>Learn MERN stack :MongoDB, <br>Express.js,React.js,Node.js.Build <br> Dynamic web apps.Gain hands-on <br> full-stack skills</p>
+        <center><button type="button" class="btn btn-primary">Enroll Now</button></center>
+     </div>
+    </div>
 </body>
 </html>
