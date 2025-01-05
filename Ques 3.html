@@ -1,77 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="data:image/jpeg;base64,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" 
-            width="40px" height="40px">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-current="false">
-                  Courses
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Web Development</a></li>
-                  <li><a class="dropdown-item" href="#">Data Analyst</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Machine Learning</a></li>
-                </ul>
-                <li class="nav-item">
-                    <a class="nav-link disabled" aria-disabled="page" href="#">Job Portal</a>
-                  </li>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">PW Skills Lab</a>
-              </li>
-            </ul>
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Login</button>
-        
-      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">Login to your account</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <form>
-                <div class="mb-3">
-                  <label for="recipient-name" class="col-form-label">Email adress</label>
-                  <input type="text" class="form-control" id="recipient-name">
-                  We'll never share your email with anyone else
-                </div>
-                
-                <div class="mb-3">
-                  <label for="message-text" class="col-form-label">Password</label>
-                  <textarea class="form-control" id="message-text"></textarea>
-                </div>
-              </form>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Login</button>
-            </div>
-          </div>
-        </div>
+<body class="bg-gray-100 font-sans">
+
+  <!-- Dashboard Container -->
+  <div class="flex h-screen">
+    <!-- Sidebar -->
+    <aside class="w-64 bg-gray-800 text-gray-400 flex flex-col">
+      <div class="p-4 text-lg text-center font-bold border-b border-gray-700">
+        Dashboard
       </div>
+      <nav class="flex-1 p-4">
+        <ul>
+          <li class="inline-flex">
+            <img src="https://cdn-icons-png.flaticon.com/128/833/833007.png" class="rounded-full w-7 h-7">
+            <a href="#" class="block px-4 hover:bg-gray-700 rounded">
+              Dashboard
+            </a>
+          </li>
+          <li class="inline-flex">
+            <img src="https://cdn-icons-png.flaticon.com/128/7261/7261534.png" class="rounded-full w-7 h-7">
+            <a href="#" class="block px-4  hover:bg-gray-700 rounded">
+             Teams
+            </a>
+          </li>
+          <li class="inline-flex">
+            <img src="https://cdn-icons-png.flaticon.com/128/1420/1420462.png" class="rounded-full w-7 h-7">
+            <a href="#" class="block px-4  hover:bg-gray-700 rounded">
+              Projects
+            </a>
+          </li>
+          <li class="inline-flex">
+            <img src="https://cdn-icons-png.flaticon.com/128/2838/2838764.png" class="rounded-full w-7 h-7">
+            <a href="#" class="block px-4  hover:bg-gray-700 rounded">
+              Calendar
+            </a>
+          </li>
+          <li class="inline-flex">
+            <img src="https://cdn-icons-png.flaticon.com/128/2991/2991106.png" class="rounded-full w-7 h-7">
+            <a href="#" class="block px-4  hover:bg-gray-700 rounded">
+             Documents
+            </a>
+          </li>
+          <li class="inline-flex">
+            <img src="https://cdn-icons-png.flaticon.com/128/5537/5537974.png" class="rounded-full w-7 h-7">
+            <a href="#" class="block px-4  hover:bg-gray-700 rounded">
+             Reports
+            </a>
+          </li>
 
+        </ul>
+      </nav>
+      <ul>
+      <li class="my-3 gap-x-2 items-center ">
+        <a href="#" class="block px-3 py-1 hover:bg-gray-700 rounded">
+         Your Teams
+        </a>
+      </li>
+    </ul>
 
-    </div>
+      <li class="inline-flex mx-2 my-1">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN1JZGRN-IJWoY2tDfe08u9TGEW5QTrWmVlA&s" class="rounded-full w-5 h-5">
+        <a href="#" class="block px-2 hover:bg-gray-700 rounded">
+         PW Skills
+        </a>
+      </li>
+
+    <li class="inline-flex mx-2 my-1">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN1JZGRN-IJWoY2tDfe08u9TGEW5QTrWmVlA&s" class="rounded-full w-5 h-5">
+      <a href="#" class="block px-4 hover:bg-gray-700 rounded">
+       PW Lab
+      </a>
+    </li>
+
+    <li class="inline-flex mx-2 my-1">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN1JZGRN-IJWoY2tDfe08u9TGEW5QTrWmVlA&s" class="rounded-full w-5 h-5">
+      <a href="#" class="block px-4  hover:bg-gray-700 rounded">
+       PW-IOI
+      </a>
+    </li>
+
+  </aside>
+
+  <div class="flex-1 flex-col ml-3 py-2">
+    <!-- Top Bar -->
+    <header class="bg-white shadow-md p-4 flex items-center justify-between border-2 border-gray-300 rounded-xl">
+      <!-- Profile Section -->
+      <div class="flex items-center gap-4">
+        <img src="https://cdn-icons-png.flaticon.com/128/64/64572.png" class="rounded-full w-7 h-7">
+        <div class="text-lg font-semibold">Profile</div>
+      </div>
+      <!-- Right Icons (Search and Bell) -->
+      <div class="flex items-center gap-4">
+        <img src="https://cdn-icons-png.flaticon.com/128/149/149852.png" class="w-6 h-6">
+        <img src="https://cdn-icons-png.flaticon.com/128/1827/1827349.png" class="w-6 h-6">
+      </div>
+    </header>
+  </div>
 </div>
-</nav>
-
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 </body>
 </html>
