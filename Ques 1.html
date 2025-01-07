@@ -3,24 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript and Its Role in Web Development</title>
+    <title>Conditional Statements in JavaScript</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
             margin: 20px;
             color: #333;
-            background-color: rgba(127, 255, 212, 0.425);
+            background-color: rgba(218, 112, 200, 0.151);
         }
         h1, h2 {
             color: #0056b3;
         }
-        ul {
-            margin: 10px 0;
-            padding: 0 20px;
-        }
-        li {
-            margin-bottom: 10px;
+        pre {
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 4px;
+            overflow: auto;
         }
         code {
             background: #f4f4f4;
@@ -30,64 +30,106 @@
     </style>
 </head>
 <body>
-    <h1>What is JavaScript?</h1>
+    <h1>Conditional Statements in JavaScript</h1>
     <p>
-        JavaScript is a <strong>high-level, interpreted programming language</strong> widely used for creating interactive and dynamic content on the web.
-        It is a core technology of the World Wide Web alongside <strong>HTML</strong> and <strong>CSS</strong>. JavaScript supports object-oriented, functional, and imperative programming styles and runs in the user's browser.
+        Conditional statements are used to perform different actions based on different conditions. In JavaScript, there are several types of conditional statements that help you make decisions in your code.
     </p>
 
-    <h2>Role of JavaScript in Web Development</h2>
+    <h2>Types of Conditional Statements</h2>
     <ul>
-        <li>
-            <strong>Dynamic Content:</strong> JavaScript enables developers to update web content dynamically without page reloads.
-            Examples include:
-            <ul>
-                <li>Form validation</li>
-                <li>Loading data via AJAX</li>
-                <li>Updating parts of a webpage (e.g., social media feeds)</li>
-            </ul>
-        </li>
-        <li>
-            <strong>Interactivity:</strong> JavaScript handles user interactions like clicks, key presses, or hovering to create features such as:
-            <ul>
-                <li>Dropdown menus</li>
-                <li>Image sliders</li>
-                <li>Interactive maps</li>
-            </ul>
-        </li>
-        <li>
-            <strong>DOM Manipulation:</strong> Developers can use JavaScript to interact with the <code>Document Object Model (DOM)</code> to:
-            <ul>
-                <li>Change the structure, style, or content of web pages dynamically</li>
-                <li>Add or remove HTML elements</li>
-            </ul>
-        </li>
-        <li>
-            <strong>Client-Side Scripting:</strong> JavaScript reduces the need for server-side processing, improving performance. Examples:
-            <ul>
-                <li>Autocomplete suggestions</li>
-                <li>Lightbox previews</li>
-            </ul>
-        </li>
-        <li>
-            <strong>Backend Development:</strong> With <code>Node.js</code>, JavaScript is also used for backend development to write server-side applications.
-        </li>
-        <li>
-            <strong>Cross-Platform Development:</strong> JavaScript helps build progressive web apps (PWAs) and hybrid mobile apps using frameworks like React Native or Ionic.
-        </li>
-        <li>
-            <strong>APIs and Libraries:</strong> JavaScript works with APIs, libraries, and frameworks, including:
-            <ul>
-                <li>React.js, Vue.js, and Angular for frontend development</li>
-                <li>D3.js for data visualization</li>
-                <li>Three.js for 3D animations</li>
-            </ul>
-        </li>
+        <li><strong>if statement:</strong> Executes a block of code if a specified condition is true.</li>
+        <li><strong>if-else statement:</strong> Executes one block of code if the condition is true, and another block if it is false.</li>
+        <li><strong>else if statement:</strong> Tests multiple conditions and executes code for the first true condition.</li>
+        <li><strong>switch statement:</strong> Compares a value against multiple cases and executes the block of code for the matching case.</li>
     </ul>
 
-    <h2>Summary</h2>
+    <h2>1. <code>if</code> Statement</h2>
     <p>
-        JavaScript is essential in modern web development, transforming static web pages into dynamic, interactive experiences, enhancing usability, and enabling seamless client-server communication.
+        The <code>if</code> statement is used to execute a block of code only if a condition is true.
     </p>
+    <pre><code>if (condition) {
+    // Code to be executed if the condition is true
+}
+    </code></pre>
+    <p>Example:</p>
+    <pre><code>let age = 18;
+if (age >= 18) {
+    console.log("You are an adult.");
+}  // Output: You are an adult.
+    </code></pre>
+
+    <h2>2. <code>if-else</code> Statement</h2>
+    <p>
+        The <code>if-else</code> statement allows you to execute one block of code if the condition is true and another block if the condition is false.
+    </p>
+    <pre><code>if (condition) {
+    // Code to be executed if the condition is true
+} else {
+    // Code to be executed if the condition is false
+}
+    </code></pre>
+    <p>Example:</p>
+    <pre><code>let age = 16;
+if (age >= 18) {
+    console.log("You are an adult.");
+} else {
+    console.log("You are a minor.");
+}  // Output: You are a minor.
+    </code></pre>
+
+    <h2>3. <code>else if</code> Statement</h2>
+    <p>
+        The <code>else if</code> statement is used to check multiple conditions. If the first condition is false, it checks the next condition, and so on.
+    </p>
+    <pre><code>if (condition1) {
+    // Code to be executed if condition1 is true
+} else if (condition2) {
+    // Code to be executed if condition2 is true
+} else {
+    // Code to be executed if neither condition is true
+}
+    </code></pre>
+    <p>Example:</p>
+    <pre><code>let score = 85;
+if (score >= 90) {
+    console.log("Grade: A");
+} else if (score >= 75) {
+    console.log("Grade: B");
+} else {
+    console.log("Grade: C");
+}  // Output: Grade: B
+    </code></pre>
+
+    <h2>4. <code>switch</code> Statement</h2>
+    <p>
+        The <code>switch</code> statement evaluates an expression, matches the value with the corresponding <code>case</code>, and executes the block of code for the matching case.
+    </p>
+    <pre><code>switch (expression) {
+    case value1:
+        // Code to be executed if expression === value1
+        break;
+    case value2:
+        // Code to be executed if expression === value2
+        break;
+    default:
+        // Code to be executed if no cases match
+}
+    </code></pre>
+    <p>Example:</p>
+    <pre><code>let day = 3;
+switch (day) {
+    case 1:
+        console.log("Monday");
+        break;
+    case 2:
+        console.log("Tuesday");
+        break;
+    case 3:
+        console.log("Wednesday"); // Output: Wednesday
+        break;
+    default:
+        console.log("Invalid day");
+}
+    </code></pre>
 </body>
 </html>

@@ -3,101 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Primitive Data Types in JavaScript</title>
+    <title>Loops in JavaScript</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
             margin: 20px;
             color: #333;
-            background-color: rgba(222, 184, 135, 0.329);
+            background-color: rgba(189, 183, 107, 0.13);
         }
         h1, h2 {
             color: #0056b3;
         }
-        ul {
-            margin: 10px 0;
-            padding: 0 20px;
-        }
-        li {
-            margin-bottom: 10px;
+        pre {
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 4px;
+            overflow: auto;
         }
         code {
             background: #f4f4f4;
             padding: 2px 4px;
             border-radius: 4px;
         }
-        pre {
-            background: #f9f9f9;
-            border: 1px solid #ddd;
-            padding: 10px;
-            overflow: auto;
-            border-radius: 4px;
-        }
     </style>
 </head>
 <body>
-    <h1>Primitive Data Types in JavaScript</h1>
+    <h1>Loops in JavaScript</h1>
     <p>
-        Primitive data types in JavaScript are the basic building blocks of data. They are immutable (cannot be changed) and are stored by value. Here are the five primitive data types:
+        Loops are used to execute a block of code repeatedly as long as a specified condition is true. In JavaScript, loops are essential for automating repetitive tasks and iterating over collections like arrays or objects.
     </p>
 
-    <h2>1. <code>String</code></h2>
+    <h2>Why Do We Need Loops?</h2>
     <p>
-        Represents textual data enclosed in single quotes, double quotes, or backticks.
+        Loops save time and effort by allowing you to write code that runs multiple times without duplicating the same block of code. They are especially useful for:
     </p>
-    <pre><code>// Example of a String
-let name = "John Doe";
-console.log(name); // Output: John Doe
-    </code></pre>
-
-    <h2>2. <code>Number</code></h2>
-    <p>
-        Represents numeric data, including integers and floating-point numbers.
-    </p>
-    <pre><code>// Example of a Number
-let age = 25;
-let price = 99.99;
-console.log(age);   // Output: 25
-console.log(price); // Output: 99.99
-    </code></pre>
-
-    <h2>3. <code>Boolean</code></h2>
-    <p>
-        Represents a logical entity with two values: <code>true</code> or <code>false</code>.
-    </p>
-    <pre><code>// Example of a Boolean
-let isStudent = true;
-let isEmployed = false;
-console.log(isStudent);  // Output: true
-console.log(isEmployed); // Output: false
-    </code></pre>
-
-    <h2>4. <code>Undefined</code></h2>
-    <p>
-        Represents a variable that has been declared but not assigned a value.
-    </p>
-    <pre><code>// Example of Undefined
-let address;
-console.log(address); // Output: undefined
-    </code></pre>
-
-    <h2>5. <code>Null</code></h2>
-    <p>
-        Represents an intentional absence of any object value. It is explicitly assigned.
-    </p>
-    <pre><code>// Example of Null
-let salary = null;
-console.log(salary); // Output: null
-    </code></pre>
-
-    <h2>Summary Table</h2>
     <ul>
-        <li><strong>String:</strong> Textual data. Example: <code>"Hello"</code></li>
-        <li><strong>Number:</strong> Numeric data. Example: <code>42</code></li>
-        <li><strong>Boolean:</strong> Logical values. Example: <code>true</code>, <code>false</code></li>
-        <li><strong>Undefined:</strong> Unassigned variable. Example: <code>undefined</code></li>
-        <li><strong>Null:</strong> No value. Example: <code>null</code></li>
+        <li>Iterating over arrays or objects.</li>
+        <li>Performing repeated tasks, such as calculations or condition checks.</li>
+        <li>Improving efficiency and reducing the amount of code you need to write.</li>
     </ul>
+
+    <h2>Types of Loops in JavaScript</h2>
+    <h3>1. <code>for</code> Loop</h3>
+    <p>
+        The <code>for</code> loop is the most commonly used loop when you know how many times you want to execute a block of code. It consists of three parts:
+    </p>
+    <pre><code>for (initialization; condition; increment/decrement) {
+    // Code to be executed
+}
+    </code></pre>
+    <p>Example:</p>
+    <pre><code>for (let i = 0; i < 5; i++) {
+    console.log(i); // Output: 0, 1, 2, 3, 4
+}
+    </code></pre>
+
+    <h3>2. <code>while</code> Loop</h3>
+    <p>
+        The <code>while</code> loop executes a block of code as long as the specified condition is true. It is commonly used when the number of iterations is not known ahead of time.
+    </p>
+    <pre><code>while (condition) {
+    // Code to be executed
+}
+    </code></pre>
+    <p>Example:</p>
+    <pre><code>let i = 0;
+while (i < 5) {
+    console.log(i); // Output: 0, 1, 2, 3, 4
+    i++;
+}
+    </code></pre>
+
+    <h3>3. <code>do...while</code> Loop</h3>
+    <p>
+        The <code>do...while</code> loop executes a block of code once, and then repeats the loop as long as the specified condition is true. The key difference from the <code>while</code> loop is that the <code>do...while</code> loop always runs at least once.
+    </p>
+    <pre><code>do {
+    // Code to be executed
+} while (condition);
+    </code></pre>
+    <p>Example:</p>
+    <pre><code>let i = 0;
+do {
+    console.log(i); // Output: 0, 1, 2, 3, 4
+    i++;
+} while (i < 5);
+    </code></pre>
+
+    <h3>4. <code>for...in</code> Loop</h3>
+    <p>
+        The <code>for...in</code> loop is used to iterate over the properties of an object. It is useful when you want to loop through the keys or properties of an object.
+    </p>
+    <pre><code>for (let key in object) {
+    // Code to be executed
+}
+    </code></pre>
+    <p>Example:</p>
+    <pre><code>let person = {name: "Alice", age: 25, city: "New York"};
+for (let key in person) {
+    console.log(key + ": " + person[key]); 
+}
+// Output: name: Alice, age: 25, city: New York
+    </code></pre>
+
+    <h3>5. <code>for...of</code> Loop</h3>
+    <p>
+        The <code>for...of</code> loop is used to iterate over the values in an iterable object (like an array or string). This is a more modern and efficient way of looping through arrays.
+    </p>
+    <pre><code>for (let value of iterable) {
+    // Code to be executed
+}
+    </code></pre>
+    <p>Example:</p>
+    <pre><code>let numbers = [10, 20, 30, 40, 50];
+for (let number of numbers) {
+    console.log(number); // Output: 10, 20, 30, 40, 50
+}
+    </code></pre>
 </body>
 </html>

@@ -1,6 +1,17 @@
-const principle=1500
-const rate=10
-const time=2 //in years
-const result=(principle*rate*time)/100
+console.log("For Ascending Order:"); //for ascending order
 
-console.log("simple interest=", result)
+let num1=0
+
+while (num < 25) {
+    num++
+    console.log(num);  
+}
+
+console.log("For Descending Order:");  //for descending order
+
+let num2=26
+
+while (num2 >= 1) {
+    num2--
+    console.log(num2);  
+}
