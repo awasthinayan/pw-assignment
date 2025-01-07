@@ -3,29 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Differences Between JavaScript and HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            color: #333;
+            background-color: rgba(255, 228, 196, 0.322);
+        }
+        h1, h2 {
+            color: #0056b3;
+        }
+        ul {
+            margin: 10px 0;
+            padding: 0 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        code {
+            background: #f4f4f4;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+        pre {
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            padding: 10px;
+            overflow: auto;
+            border-radius: 4px;
+        }
+    </style>
 </head>
 <body>
-    <body class="xl:bg-slate-200">
-    <div class="lg:inline-block lg:bg-slate-200 lg:p-4 lg:rounded-lg sm-rounded xl:mx-28 xl:my-1 sm:bg-gray-300 sm:p-4 sm:rounded-lg sm:flex sm:flex-col sm:items-center sm:gap-4">
-        <h1 class="lg:text-lg lg:font-bold lg:mb-2  sm:text sm:text-lg sm:font-bold sm:mb-4">Image Gallery</h1>
-        <div class="lg:flex lg:gap-3 sm:gap-3">
-            <img src="https://img.freepik.com/free-photo/man-proud-himself_1368-97.jpg?t=st=1736011319~exp=1736014919~hmac=ab31cc86a05fe88ae4885cf2ba70c5e9672b0ffba9602f0e3ce4cec39d259800&w=360" 
-                 width="200px" 
-                 height="400px" 
-                 class="lg:border lg:rounded-lg sm:border sm:rounded-lg">
-            <img src="https://img.freepik.com/free-photo/man-proud-himself_1368-97.jpg?t=st=1736011319~exp=1736014919~hmac=ab31cc86a05fe88ae4885cf2ba70c5e9672b0ffba9602f0e3ce4cec39d259800&w=360" 
-                 width="200px" 
-                 height="400px" 
-                 class="lg:border lg:rounded-lg sm:border sm:rounded-lg">
-            <img src="https://img.freepik.com/free-photo/man-proud-himself_1368-97.jpg?t=st=1736011319~exp=1736014919~hmac=ab31cc86a05fe88ae4885cf2ba70c5e9672b0ffba9602f0e3ce4cec39d259800&w=360" 
-                 width="200px" 
-                 height="400px" 
-                 class="lg:border lg:rounded-lg sm:border sm:rounded-lg">
-        </div>
-    </div>
+    <h1>Key Differences Between JavaScript and HTML</h1>
+    <h2>1. What They Are</h2>
+    <ul>
+        <li>
+            <strong>HTML (HyperText Markup Language):</strong>  
+            HTML is a <strong>markup language</strong> used to create the structure and content of a webpage.  
+            Example usage: Adding headings, paragraphs, images, and links.
+        </li>
+        <li>
+            <strong>JavaScript:</strong>  
+            JavaScript is a <strong>programming language</strong> used to make a webpage interactive and dynamic.  
+            Example usage: Adding form validations, animations, or dynamic content updates.
+        </li>
+    </ul>
 
-</body>
+    <h2>2. Key Roles</h2>
+    <ul>
+        <li><strong>HTML:</strong> Defines the structure of the webpage. It is static and does not allow interactivity.</li>
+        <li><strong>JavaScript:</strong> Adds logic, interactivity, and dynamic features to a webpage.</li>
+    </ul>
+
+    <h2>3. When to Use Each</h2>
+    <ul>
+        <li>
+            <strong>HTML:</strong> Use when creating the basic layout and structure of a webpage.  
+            Example: Adding a title, navigation bar, or images.
+            <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;HTML Example&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Welcome to My Website&lt;/h1&gt;
+    &lt;p&gt;This is a static paragraph.&lt;/p&gt;
+    &lt;img src="image.jpg" alt="Example Image"&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+            </code></pre>
+        </li>
+        <li>
+            <strong>JavaScript:</strong> Use when adding interactivity or dynamic behavior to the webpage.  
+            Example: Displaying an alert when a button is clicked.
+            <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;JavaScript Example&lt;/title&gt;
+    &lt;script&gt;
+        function showAlert() {
+            alert("Hello, this is a JavaScript alert!");
+        }
+    &lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Interactive Page&lt;/h1&gt;
+    &lt;button onclick="showAlert()"&gt;Click Me&lt;/button&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+            </code></pre>
+        </li>
+    </ul>
+
+    <h2>Summary</h2>
+    <p>
+        <strong>HTML:</strong> Used for defining the structure and content of a webpage.  
+        <strong>JavaScript:</strong> Used for adding interactivity, logic, and dynamic behavior to a webpage.  
+        Both are essential and complement each other in modern web development.
+    </p>
 </body>
 </html>

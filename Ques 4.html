@@ -3,15 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Declaring Variables in JavaScript with 'let'</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            color: #333;
+            background-color: rgba(169, 169, 169, 0.301);
+        }
+        h1, h2 {
+            color: #0056b3;
+        }
+        pre {
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 4px;
+            overflow: auto;
+        }
+        code {
+            background: #f4f4f4;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Before using developer tool:</h1>
-    <img src="Screenshot (101).png" height="300px" width="600px" style="border: 2px solid;">
+    <h1>Declaring Variables in JavaScript</h1>
+    <h2>Purpose of Declaring Variables</h2>
+    <p>
+        Variables are containers for storing data values. In JavaScript, declaring variables allows developers to:
+    </p>
+    <ul>
+        <li>Store and reuse data.</li>
+        <li>Make the code more readable and maintainable.</li>
+        <li>Perform operations on stored values.</li>
+    </ul>
 
-    
-    <h2>After using developer tool:</h2>
-    
-    <img src="Screenshot (98).png" height="300px" width="600px" style="border: 2px solid;">
+    <h2>Using the <code>let</code> Keyword</h2>
+    <p>
+        The <code>let</code> keyword is used to declare variables in JavaScript. Variables declared with <code>let</code> are:
+    </p>
+    <ul>
+        <li><strong>Block-scoped:</strong> They are accessible only within the block, statement, or expression they are defined in.</li>
+        <li><strong>Reassignable:</strong> Their values can be changed after declaration.</li>
+    </ul>
+
+    <h2>Syntax</h2>
+    <pre><code>let variableName = value;</code></pre>
+
+    <h2>Examples</h2>
+    <h3>1. Declaring and Assigning a Variable</h3>
+    <pre><code>// Example: Declaring and assigning a variable
+let name = "Alice";
+console.log(name); // Output: Alice
+    </code></pre>
+
+    <h3>2. Changing the Value of a Variable</h3>
+    <pre><code>// Example: Changing a variable's value
+let age = 25;
+console.log(age); // Output: 25
+age = 30; // Reassigning a new value
+console.log(age); // Output: 30
+    </code></pre>
+
+    <h3>3. Block Scope Behavior</h3>
+    <pre><code>// Example: Block scope with 'let'
+if (true) {
+    let color = "blue";
+    console.log(color); // Output: blue (accessible inside the block)
+}
+console.log(color); // Error: color is not defined (outside the block)
+    </code></pre>
 </body>
 </html>

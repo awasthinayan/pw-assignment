@@ -3,15 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Importance of Comments in JavaScript</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            color: #333;
+            background-color: #33333344;
+        }
+        h1, h2 {
+            color: #0056b3;
+        }
+        pre {
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 4px;
+            overflow: auto;
+        }
+        code {
+            background: #f4f4f4;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Before using developer tool:</h1>
-    <img src="Screenshot (101).png" height="300px" width="600px" style="border: 2px solid;">
+    <h1>Importance of Comments in JavaScript</h1>
+    <p>
+        Comments in JavaScript are used to improve code readability and maintainability. They are ignored by the JavaScript engine during execution and serve as a tool for developers to:
+    </p>
+    <ul>
+        <li>Explain the purpose of the code.</li>
+        <li>Provide context or reasoning behind specific implementations.</li>
+        <li>Temporarily disable parts of the code for debugging.</li>
+        <li>Collaborate effectively in team environments by making the code self-explanatory.</li>
+    </ul>
 
-    
-    <h2>After using developer tool:</h2>
-    
-    <img src="Screenshot (100).png" height="300px" width="600px" style="border: 2px solid;">
+    <h2>Types of Comments in JavaScript</h2>
+    <h3>1. Single-Line Comments</h3>
+    <p>Single-line comments start with <code>//</code> and are used for brief explanations or to disable a single line of code.</p>
+    <pre><code>// This is a single-line comment
+let x = 5; // Declaring a variable and assigning a value
+console.log(x); // Output: 5
+    </code></pre>
+
+    <h3>2. Multi-Line Comments</h3>
+    <p>Multi-line comments start with <code>/*</code> and end with <code>*/</code>. They are used for longer explanations or to disable multiple lines of code.</p>
+    <pre><code>/*
+This is a multi-line comment.
+It can span multiple lines and is useful for detailed explanations.
+*/
+let y = 10; /* Declaring another variable */
+console.log(y); // Output: 10
+    </code></pre>
+
+    <h2>Examples of Using Comments</h2>
+    <h3>1. Explaining Code Logic</h3>
+    <pre><code>// Function to calculate the square of a number
+function square(num) {
+    return num * num; // Multiply the number by itself
+}
+console.log(square(4)); // Output: 16
+    </code></pre>
+
+    <h3>2. Debugging with Comments</h3>
+    <pre><code>let a = 5;
+let b = 10;
+// console.log(a + b); // Temporarily disabling this line for debugging
+console.log(a * b); // Output: 50
+    </code></pre>
 </body>
 </html>

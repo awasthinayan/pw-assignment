@@ -1,107 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dashboard</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primitive Data Types in JavaScript</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            color: #333;
+            background-color: rgba(222, 184, 135, 0.329);
+        }
+        h1, h2 {
+            color: #0056b3;
+        }
+        ul {
+            margin: 10px 0;
+            padding: 0 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        code {
+            background: #f4f4f4;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+        pre {
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            padding: 10px;
+            overflow: auto;
+            border-radius: 4px;
+        }
+    </style>
 </head>
-<body class="bg-gray-100 font-sans">
+<body>
+    <h1>Primitive Data Types in JavaScript</h1>
+    <p>
+        Primitive data types in JavaScript are the basic building blocks of data. They are immutable (cannot be changed) and are stored by value. Here are the five primitive data types:
+    </p>
 
-  <!-- Dashboard Container -->
-  <div class="flex h-screen">
-    <!-- Sidebar -->
-    <aside class="w-64 bg-gray-800 text-gray-400 flex flex-col">
-      <div class="p-4 text-lg text-center font-bold border-b border-gray-700">
-        Dashboard
-      </div>
-      <nav class="flex-1 p-4">
-        <ul>
-          <li class="inline-flex">
-            <img src="https://cdn-icons-png.flaticon.com/128/833/833007.png" class="rounded-full w-7 h-7">
-            <a href="#" class="block px-4 hover:bg-gray-700 rounded">
-              Dashboard
-            </a>
-          </li>
-          <li class="inline-flex">
-            <img src="https://cdn-icons-png.flaticon.com/128/7261/7261534.png" class="rounded-full w-7 h-7">
-            <a href="#" class="block px-4  hover:bg-gray-700 rounded">
-             Teams
-            </a>
-          </li>
-          <li class="inline-flex">
-            <img src="https://cdn-icons-png.flaticon.com/128/1420/1420462.png" class="rounded-full w-7 h-7">
-            <a href="#" class="block px-4  hover:bg-gray-700 rounded">
-              Projects
-            </a>
-          </li>
-          <li class="inline-flex">
-            <img src="https://cdn-icons-png.flaticon.com/128/2838/2838764.png" class="rounded-full w-7 h-7">
-            <a href="#" class="block px-4  hover:bg-gray-700 rounded">
-              Calendar
-            </a>
-          </li>
-          <li class="inline-flex">
-            <img src="https://cdn-icons-png.flaticon.com/128/2991/2991106.png" class="rounded-full w-7 h-7">
-            <a href="#" class="block px-4  hover:bg-gray-700 rounded">
-             Documents
-            </a>
-          </li>
-          <li class="inline-flex">
-            <img src="https://cdn-icons-png.flaticon.com/128/5537/5537974.png" class="rounded-full w-7 h-7">
-            <a href="#" class="block px-4  hover:bg-gray-700 rounded">
-             Reports
-            </a>
-          </li>
+    <h2>1. <code>String</code></h2>
+    <p>
+        Represents textual data enclosed in single quotes, double quotes, or backticks.
+    </p>
+    <pre><code>// Example of a String
+let name = "John Doe";
+console.log(name); // Output: John Doe
+    </code></pre>
 
-        </ul>
-      </nav>
-      <ul>
-      <li class="my-3 gap-x-2 items-center ">
-        <a href="#" class="block px-3 py-1 hover:bg-gray-700 rounded">
-         Your Teams
-        </a>
-      </li>
+    <h2>2. <code>Number</code></h2>
+    <p>
+        Represents numeric data, including integers and floating-point numbers.
+    </p>
+    <pre><code>// Example of a Number
+let age = 25;
+let price = 99.99;
+console.log(age);   // Output: 25
+console.log(price); // Output: 99.99
+    </code></pre>
+
+    <h2>3. <code>Boolean</code></h2>
+    <p>
+        Represents a logical entity with two values: <code>true</code> or <code>false</code>.
+    </p>
+    <pre><code>// Example of a Boolean
+let isStudent = true;
+let isEmployed = false;
+console.log(isStudent);  // Output: true
+console.log(isEmployed); // Output: false
+    </code></pre>
+
+    <h2>4. <code>Undefined</code></h2>
+    <p>
+        Represents a variable that has been declared but not assigned a value.
+    </p>
+    <pre><code>// Example of Undefined
+let address;
+console.log(address); // Output: undefined
+    </code></pre>
+
+    <h2>5. <code>Null</code></h2>
+    <p>
+        Represents an intentional absence of any object value. It is explicitly assigned.
+    </p>
+    <pre><code>// Example of Null
+let salary = null;
+console.log(salary); // Output: null
+    </code></pre>
+
+    <h2>Summary Table</h2>
+    <ul>
+        <li><strong>String:</strong> Textual data. Example: <code>"Hello"</code></li>
+        <li><strong>Number:</strong> Numeric data. Example: <code>42</code></li>
+        <li><strong>Boolean:</strong> Logical values. Example: <code>true</code>, <code>false</code></li>
+        <li><strong>Undefined:</strong> Unassigned variable. Example: <code>undefined</code></li>
+        <li><strong>Null:</strong> No value. Example: <code>null</code></li>
     </ul>
-
-      <li class="inline-flex mx-2 my-1">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN1JZGRN-IJWoY2tDfe08u9TGEW5QTrWmVlA&s" class="rounded-full w-5 h-5">
-        <a href="#" class="block px-2 hover:bg-gray-700 rounded">
-         PW Skills
-        </a>
-      </li>
-
-    <li class="inline-flex mx-2 my-1">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN1JZGRN-IJWoY2tDfe08u9TGEW5QTrWmVlA&s" class="rounded-full w-5 h-5">
-      <a href="#" class="block px-4 hover:bg-gray-700 rounded">
-       PW Lab
-      </a>
-    </li>
-
-    <li class="inline-flex mx-2 my-1">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN1JZGRN-IJWoY2tDfe08u9TGEW5QTrWmVlA&s" class="rounded-full w-5 h-5">
-      <a href="#" class="block px-4  hover:bg-gray-700 rounded">
-       PW-IOI
-      </a>
-    </li>
-
-  </aside>
-
-  <div class="flex-1 flex-col ml-3 py-2">
-    <!-- Top Bar -->
-    <header class="bg-white shadow-md p-4 flex items-center justify-between border-2 border-gray-300 rounded-xl">
-      <!-- Profile Section -->
-      <div class="flex items-center gap-4">
-        <img src="https://cdn-icons-png.flaticon.com/128/64/64572.png" class="rounded-full w-7 h-7">
-        <div class="text-lg font-semibold">Profile</div>
-      </div>
-      <!-- Right Icons (Search and Bell) -->
-      <div class="flex items-center gap-4">
-        <img src="https://cdn-icons-png.flaticon.com/128/149/149852.png" class="w-6 h-6">
-        <img src="https://cdn-icons-png.flaticon.com/128/1827/1827349.png" class="w-6 h-6">
-      </div>
-    </header>
-  </div>
-</div>
 </body>
 </html>
